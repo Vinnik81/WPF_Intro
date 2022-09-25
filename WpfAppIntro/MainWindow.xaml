@@ -1,0 +1,132 @@
+﻿<Window x:Class="WpfAppIntro.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppIntro"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="400">
+    <!--<Grid>
+        -->
+    <!--aaa-->
+    <!--
+    </Grid>-->
+    <!--<Grid>
+        <Button Background="DarkGreen" Margin="1,0,-1,0">Cancel</Button>
+    </Grid>-->
+    <!--<Grid>
+        --><!--<Button Foreground="Yellow" Background="Red" Content="999" FontSize="50">-->
+        <!--Click Me 1!-->
+        <!--</Button>-->
+        <!--<Button Content="Hello"/>-->
+        <!--<Button>
+            <Button>
+                <Button>Ok</Button>
+        </Button>
+        </Button>--><!--
+        <TextBox>Ok</TextBox>
+
+    </Grid>-->
+
+    <!--<StackPanel Orientation="Horizontal">
+        <Button Width="50" Height="100" FontSize="20">1</Button>
+        <Button>
+            <Button>OK</Button>
+        </Button>
+        <Button>2</Button>
+        <Button>3</Button>
+        <TextBox>OK</TextBox>
+        <Button FontSize="100">4</Button>
+        <Button>5</Button>
+    </StackPanel>-->
+    <!--<WrapPanel>
+        <Button>One</Button>
+        <Button>Two</Button>
+        <Button>Three</Button>
+        <Button>Four</Button>
+        <Button>Fife</Button>
+    </WrapPanel>-->
+    <!--<StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+        <Button Width="100">1</Button>
+        <Button>2</Button>
+        <Button>3</Button>
+        <Button>4</Button>
+        <Button>5</Button>
+    </StackPanel>-->
+    <!--<DockPanel Background="Red" LastChildFill="False">
+        <Button>1</Button>
+        <Button>2</Button>
+        <Button>3</Button>
+        <Button>4</Button>
+        <Button Background="Aqua">5</Button>
+    </DockPanel>-->
+    <!--<DockPanel >
+        <Button DockPanel.Dock="Top" Background="Red">1</Button>
+        <Button DockPanel.Dock="Top" Background="Red">1</Button>
+        <Button DockPanel.Dock="Top" Background="Red">1</Button>
+        <Button DockPanel.Dock="Top" Background="Red">1</Button>
+        <Button DockPanel.Dock="Bottom" Background="Red">1</Button>
+        <Button DockPanel.Dock="Bottom" Background="Red">1</Button>
+        <Button DockPanel.Dock="Bottom" Background="Red">1</Button>
+        <Button DockPanel.Dock="Right" Background="Green">2</Button>
+        <Button Background="Blue">3</Button>
+        
+        <Button Background="Aqua" >4</Button>
+        
+    </DockPanel>-->
+    <!--<UniformGrid Columns="2"  Rows="4">
+        <Button>1</Button>
+        <Button>2</Button>
+        <Button>3</Button>
+        <Button>4</Button>
+        <Button>5</Button>
+        <Button>6</Button>
+        <Button>7</Button>
+    </UniformGrid>-->
+    
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Button Grid.Row="3">1</Button>
+        <Button Grid.Row="1" Grid.RowSpan="2">1</Button>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+    </Grid>
+
+
+    <!--
+    StackPanel
+    WrapPanel
+    DockPanel
+    CANVAS
+    UNIFORMGRID
+    GRID
+    
+    
+    
+    
+    FontSize - размер текста
+    Content - визуальный текст
+    Background - задний фон
+    Foreground - цвет contenta
+    Orientation - расположение horizontal/vertical
+    HorizontalAlignment , VerticalAlignment - расположение на экране
+    LastChildFill - вкл.окт заполнения посл элеиент
+    
+    Comment
+    <Button Attribute="Value">Content</Button> - element
+    <Button>                 - open tag
+    </Button>                - close tag
+    
+     <Button/>               - auto-closing element
+    
+    -->
+</Window>
