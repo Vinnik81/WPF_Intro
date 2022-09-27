@@ -1,0 +1,57 @@
+﻿<Window x:Class="WpfApp_Calculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp_Calculator"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="600" FontSize="20">
+    <Grid Background="#F2F0F2">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="220"/>
+        </Grid.ColumnDefinitions>
+
+        <DockPanel Background="#F2F0F2" Grid.Column="0">
+            <StackPanel Background="#F2F0F2" Orientation="Horizontal" DockPanel.Dock="Top">
+                <Button Padding="5" Background="#F2F0F2" BorderThickness="0" Width="40">≡</Button>
+                <Button Padding="5" Background="#F2F0F2" BorderThickness="0">Обычный</Button>
+                <Button Padding="5" Background="#F2F0F2" BorderThickness="0">◳</Button>
+            </StackPanel>
+            <TextBox VerticalContentAlignment="Center" Padding="20" Height="100" HorizontalContentAlignment="Right" FontSize="30" DockPanel.Dock="Top" Background="#F2F0F2" BorderThickness="0">0</TextBox>
+            <UniformGrid DockPanel.Dock="Top" Columns="5">
+                <Button BorderThickness="0">MC</Button>
+                <Button BorderThickness="0">MR</Button>
+                <Button BorderThickness="0">M+</Button>
+                <Button BorderThickness="0">M-</Button>
+                <Button BorderThickness="0">MS</Button>
+            </UniformGrid>
+            <UniformGrid Background="#DBDBDB" Columns="4" Rows="6">
+                <Button Background="#F8F8F8" Margin="1" BorderThickness="0">%</Button>  
+                <Button Background="#F8F8F8" Margin="1" BorderThickness="0">CE</Button>  
+                <Button Background="#F8F8F8" Margin="1" BorderThickness="0">C</Button>  
+                <Button Background="#F8F8F8" Margin="1" BorderThickness="0">🔙</Button>  
+                <Button Background="#F8F8F8" Margin="1" BorderThickness="0">1/x</Button>
+                <Button Background="#F8F8F8" Margin="1" BorderThickness="0">x^2</Button>  
+                <Button Background="#F8F8F8" Margin="1" BorderThickness="0">√x</Button>  
+                <Button Background="#F8F8F8" Margin="1" BorderThickness="0">÷</Button>  
+                <Button Background="#FCFCFC" Margin="1" BorderThickness="0">7</Button>  
+                <Button Background="#FCFCFC" Margin="1" BorderThickness="0">8</Button>  
+                <Button Background="#FCFCFC" Margin="1" BorderThickness="0">9</Button>
+                <Button Background="#F8F8F8" Margin="1" BorderThickness="0">×</Button>  
+                <Button Background="#FCFCFC" Margin="1" BorderThickness="0">4</Button>  
+                <Button Background="#FCFCFC" Margin="1" BorderThickness="0">5</Button>  
+                <Button Background="#FCFCFC" Margin="1" BorderThickness="0">6</Button>
+                <Button Background="#F8F8F8" Margin="1" BorderThickness="0">-</Button>  
+                <Button Background="#FCFCFC" Margin="1" BorderThickness="0">1</Button>  
+                <Button Background="#FCFCFC" Margin="1" BorderThickness="0">2</Button>  
+                <Button Background="#FCFCFC" Margin="1" BorderThickness="0">3</Button>
+                <Button Background="#F8F8F8" Margin="1" BorderThickness="0">+</Button>  
+                <Button Background="#FCFCFC" Margin="1" BorderThickness="0">+/-</Button>
+                <Button Background="#FCFCFC" Margin="1" BorderThickness="0">0</Button>
+                <Button Background="#FCFCFC" Margin="1" BorderThickness="0">.</Button>
+                <Button Background="#8EBEE8" Margin="1" BorderThickness="0">=</Button>  
+            </UniformGrid>
+        </DockPanel>
+    </Grid>
+</Window>
