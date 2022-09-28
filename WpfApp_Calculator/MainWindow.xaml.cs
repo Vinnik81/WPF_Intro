@@ -24,5 +24,19 @@ namespace WpfApp_Calculator
         {
             InitializeComponent();
         }
+
+        private void Window_SizeChanged(object sender, SizeChangedEventArgs e)
+        {
+            if (this.Width < 600)
+            {
+                List.Width = new GridLength(0);
+                History.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                List.Width = new GridLength(200);
+                History.Visibility = Visibility.Hidden;
+            }
+        }
     }
 }
