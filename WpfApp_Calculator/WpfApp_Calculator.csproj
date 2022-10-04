@@ -6,4 +6,16 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="calculator_icon_129276.ico" />
+    <None Remove="free-icon-left-arrow-with-a-cross-54221.png" />
+    <None Remove="history_120205.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="calculator_icon_129276.ico" />
+    <Resource Include="free-icon-left-arrow-with-a-cross-54221.png" />
+    <Resource Include="history_120205.png" />
+  </ItemGroup>
+
 </Project>

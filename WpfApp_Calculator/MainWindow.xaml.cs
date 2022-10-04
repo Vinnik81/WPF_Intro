@@ -38,5 +38,15 @@ namespace WpfApp_Calculator
                 History.Visibility = Visibility.Hidden;
             }
         }
+
+        private void Memory_Click(object sender, RoutedEventArgs e)
+        {
+            TextBlock.Text = "В памяти ничего\n не сохранено.";
+        }
+
+        private void Jornal_Click(object sender, RoutedEventArgs e)
+        {
+           TextBlock.Text = " 99 - 2\n 97\n 5 - 2\n 3\n 10 x 10\n 100";
+        }
     }
 }
