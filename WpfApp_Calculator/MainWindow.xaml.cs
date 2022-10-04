@@ -46,7 +46,7 @@ namespace WpfApp_Calculator
 
         private void Jornal_Click(object sender, RoutedEventArgs e)
         {
-           TextBlock.Text = " 99 - 2\n 97\n 5 - 2\n 3\n 10 x 10\n 100";
+           TextBlock.Text = "\n 99 - 2\n 97\n 5 - 2\n 3\n 10 x 10\n 100";
         }
     }
 }
